@@ -4,7 +4,8 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 const hbs = require('hbs');
-require('./hbs/helpers');
+// Debería almacenar este require en una variable para poder hacer uso de esta.
+const helpers = require('./hbs/helpers');
 
 const port = process.env.PORT || 3000;
 
